@@ -1,11 +1,11 @@
 import React from "react";
 
-function Footer() {
+export const Footer = ({ label, ...props }) => {
   return (
     <div className="footer">
-      <p>All rights reversed</p>
+      <p {...props}>{label}</p>
     </div>
   );
-}
+};
 
 export default Footer;

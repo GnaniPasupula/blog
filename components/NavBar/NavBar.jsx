@@ -1,14 +1,14 @@
 import React from "react";
 import Link from "next/link";
 
-function NavBar() {
+export const NavBar = ({ label, ...props }) => {
   return (
     <div className="nav">
-      <h2>
-        <Link href="/">Blog</Link>
+      <h2 {...props}>
+        <Link href="/">{label}</Link>
       </h2>
     </div>
   );
-}
+};
 
 export default NavBar;
