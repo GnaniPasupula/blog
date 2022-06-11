@@ -18,11 +18,15 @@ export default function Home(posts) {
   );
 }
 
+//Contentful CMS integration
+
 export async function getStaticProps() {
   const client = createClient({
     space: process.env.SPACE_ID,
     accessToken: process.env.ACCESS_TOKEN,
   });
+
+  //Getting all posts from Contentful
 
   const entries = await client.getEntries({ content_type: "blog" });
 

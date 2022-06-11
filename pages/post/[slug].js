@@ -12,7 +12,6 @@ const Post = ({ post }) => {
 
   React.useEffect(() => {
     if (router.isReady) {
-      // Code using query
       console.log(router.query);
       setslug(router.query);
     }
@@ -48,11 +47,13 @@ const Post = ({ post }) => {
 
 export default Post;
 
+//Contentful integration
 const client = createClient({
   space: process.env.SPACE_ID,
   accessToken: process.env.ACCESS_TOKEN,
 });
 
+// Getting post slugs
 export async function getStaticPaths() {
   const entries = await client.getEntries({ content_type: "blog" });
   const paths = entries.items.map((item) => {
@@ -70,6 +71,7 @@ export async function getStaticPaths() {
   };
 }
 
+// Getting post data with slug
 export async function getStaticProps({ params }) {
   const entries = await client.getEntries({
     content_type: "blog",

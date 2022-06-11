@@ -29,6 +29,8 @@ a {
   max-width: 750px;
 }
 
+/* NavBar */
+
 .nav {
   background: #181818;
   color: white;
@@ -39,6 +41,10 @@ a {
   padding: 0 20px;
 }
 
+/* NavBar */
+
+/* Footer */
+
 .footer {
   height: 120px;
   background: #383838;
@@ -47,6 +53,9 @@ a {
   align-items: center;
   justify-content: center;
 }
+/* Footer */
+
+/* PostsCard */
 
 .post-card {
   background: rgba(243, 244, 246, 1);
@@ -72,6 +81,10 @@ a {
   color: #b2b1b9;
   font-weight: bold;
 }
+/* PostsCard */
+
+/* SinglePost */
+
 .blog-content {
   background: rgba(243, 244, 246, 1);
   padding: 20px;
@@ -89,3 +102,5 @@ a {
 .thumbnail {
   margin: 20px 0px;
 }
+
+/* SinglePost */
