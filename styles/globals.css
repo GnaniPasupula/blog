@@ -14,3 +14,17 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.container {
+  max-width: 768px;
+  margin: auto;
+  overflow: auto;
+  padding: 0 10px;
+}
+
+header {
+  background: steelblue;
+  color: #fff;
+  padding: 5px;
+  margin-bottom: 40px;
+}
