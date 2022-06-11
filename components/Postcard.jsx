@@ -5,7 +5,7 @@ import moment from "moment";
 
 function Postcard({ post }) {
   const { title, slug, summary, thumbnail } = post.fields;
-  console.log(post);
+  // console.log(post);
   return (
     <div className="post-card">
       <Link href={`post/${slug}`}>
