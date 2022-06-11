@@ -28,3 +28,54 @@ header {
   padding: 5px;
   margin-bottom: 40px;
 }
+
+.content {
+  padding: 30px;
+  margin: auto;
+  min-height: calc(100vh - 190px);
+  max-width: 750px;
+}
+
+.nav {
+  background: #181818;
+  color: white;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.footer {
+  height: 120px;
+  background: #383838;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.post-card {
+  background: rgba(243, 244, 246, 1);
+  padding: 9px 20px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info {
+  flex: 2;
+  padding-right: 7px;
+}
+.thumbnail {
+  flex: 1;
+}
+.date {
+  color: #b2b1b9;
+  font-weight: bold;
+}
