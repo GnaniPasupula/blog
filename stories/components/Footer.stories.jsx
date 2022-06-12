@@ -11,5 +11,5 @@ const Template = (args) => <Footer {...args} />;
 export const footer = Template.bind({});
 
 footer.args = {
-  label: "All rights reserved",
+  FooterDescription: "Made by Gnani",
 };

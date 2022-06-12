@@ -11,5 +11,5 @@ const Template = (args) => <NavBar {...args} />;
 export const navBar = Template.bind({});
 
 navBar.args = {
-  label: "Blog",
+  TopbarTitle: "Blog",
 };

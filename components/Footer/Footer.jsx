@@ -1,9 +1,11 @@
 import React from "react";
 
-export const Footer = ({ label, ...props }) => {
+export const Footer = ({ FooterDescription, ...props }) => {
   return (
     <div className="footer">
-      <p {...props}>{label ? label : "Made by Gnani"}</p>
+      <p {...props}>
+        {FooterDescription ? FooterDescription : "Made by Gnani"}
+      </p>
     </div>
   );
 };
